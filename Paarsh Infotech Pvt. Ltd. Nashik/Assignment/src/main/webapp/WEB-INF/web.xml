@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Assignment</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+<servlet-name>CustomerLogin</servlet-name>
+<servlet-class>com.org.CustomerLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>CustomerLogin</servlet-name>
+<url-pattern>/CustomerLogin</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>Register</servlet-name>
+<servlet-class>com.org.Register</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Register</servlet-name>
+<url-pattern>/Register</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>Order</servlet-name>
+<servlet-class>com.org.Order</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Order</servlet-name>
+<url-pattern>/Order</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>ConnectionProvider</servlet-name>
+<servlet-class>com.org.ConnectionProvider</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ConnectionProvider</servlet-name>
+<url-pattern>/ConnectionProvider</url-pattern>
+</servlet-mapping>
+</web-app>
+
